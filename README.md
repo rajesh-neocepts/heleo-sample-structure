@@ -1,4 +1,4 @@
-# Helio-App-Demo-
+# Helio-App-Demo
 This is basic helio app demo.
 
 
