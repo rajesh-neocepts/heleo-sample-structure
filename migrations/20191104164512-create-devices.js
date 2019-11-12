@@ -8,6 +8,10 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
+      deviceName: {
+        type: Sequelize.STRING
+      },
+
       macAddress: {
         type: Sequelize.STRING
       },
@@ -16,14 +20,6 @@ module.exports = {
       },
       deviceStatus: {
         type: Sequelize.BOOLEAN
-      },
-      createdAt: {
-        allowNull: false,
-        type: Sequelize.DATE
-      },
-      updatedAt: {
-        allowNull: false,
-        type: Sequelize.DATE
       }
     });
   },

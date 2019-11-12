@@ -5,6 +5,7 @@ module.exports = {
         authService.registerUser();
         return res.status(200).send("User signup succefully.")
     },
+    
     login(req, res) {
         authService.loginUser();
         return res.status(200).send("User login succefully.")

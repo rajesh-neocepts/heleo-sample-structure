@@ -3,29 +3,26 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.bulkInsert('Users', [{
-      name: 'Anu',
-      email: 'anurudh.ojha@neocepts.co.in',
+      username: 'Anu',
+      useremail: 'anurudh.ojha@neocepts.co.in',
       password: 'Anurudh@123',
-      mobileNumber: '9929920292',
-      address: "Noida",
+      userphone: '9929920292',
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
-      name: 'Rajesh',
-      email: 'rajesh@neocepts.co.in',
+      username: 'Rajesh',
+      useremail: 'rajesh@neocepts.co.in',
       password: 'Rajesh@123',
-      mobileNumber: '9929920292',
-      address: "Noida",
+      userphone: '9929920292',
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
-      name: 'Prashant',
-      email: 'prashant@neocepts.co.in',
+      username: 'Prashant',
+      useremail: 'prashant@neocepts.co.in',
       password: 'Prashant@123',
-      mobileNumber: '9929920292',
-      address: "Ghaziabad",
+      userphone: '9929920292',
       createdAt: new Date(),
       updatedAt: new Date()
     }], {});

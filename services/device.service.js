@@ -1,10 +1,20 @@
 var deviceRepository = require('../db/repositories/DeviceRepository');
 var models = require('../db/models/index');
 module.exports = {
+    createDevice(deviceName, ipAddress, macAddress,callback) {
+        var sql = deviceRepository.create_device(deviceName, ipAddress, macAddress);
+        // models.Devices.create({ deviceName: deviceName, ipAddress:ipAddress, macAddress: macAddress}, function(err) {
+        //     return callback("Error in save",null);
+        // });
+        models.sequelize.query(sql,{ replacements: [deviceName,ipAddress,macAddress], type: models.sequelize.QueryTypes.INSERT}).then(([results, metadata]) => {
+            if(!results){
 
-    createDevice() {
-        deviceRepository.create_device();
-        return 0;
+                return callback("Error in save",null)
+            }else{
+
+                return callback(null,results);
+            }
+        })       
     },
     updateDevice() {
         deviceRepository.update_device();

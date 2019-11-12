@@ -22,7 +22,6 @@
                 "tags": [
                     "Device"
                 ],
-                "summary": "Save device details",
                 "description": "Add new device",
                 "parameters": [
                     {
@@ -52,7 +51,6 @@
                 "tags": [
                     "Device"
                 ],
-                "summary": "Get device list",
                 "responses": {
                     "200": {
                         "description": "Devices found successfully.",
@@ -77,7 +75,6 @@
                         "description": "deviceId"
                     }
                 ],
-                "summary": "Get device by id",
                 "responses": {
                     "200": {
                         "description": "Device found successfully.",
@@ -108,7 +105,6 @@
                         "description": "deviceId"
                     }
                 ],
-                "summary": "Update device details by id",
                 "responses": {
                     "200": {
                         "description": "Device details updated successfully.",
@@ -131,7 +127,6 @@
                         "description": "deviceId"
                     }
                 ],
-                "summary": "Delete device details by id",
                 "responses": {
                     "204": {
                         "description": "No content"
